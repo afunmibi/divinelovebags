@@ -6,12 +6,7 @@
     user-select: none;
   }
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-      
-  }
+  
 
   .b-example-divider {
     height: 3rem;
@@ -109,4 +104,38 @@
   img:hover{
     transform: scale(1.1);
     box-shadow: 0 10px 80px rgba(0, 0, 0, .25);
+  }
+
+  @media (max-width: 768px) {
+    .navvv {
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    .navbar-nav {
+      float: none;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .navbar-nav li {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+ .whatsapp{
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    margin-left: 5px;
+  }
+  .phone{
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  .btn{
+    transition: transform 0.2s;
+  }
+  .btn:hover{
+    transform: translateY(.4rem);
   }

@@ -39,27 +39,27 @@
   </header>
 <br>
 <main id="top">
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets/handbags/handbag22.jpg" class="d-block w-100" alt="Handbag">
+  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/image/handbags/handbag11.jpg" style="height: 30%;" class="d-block w-100 h-40" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/image/handbags/handbag22.jpg" style="height: 30%;" class="d-block w-100 h-40" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/image/handbags/handbagn.png" style="height: 30%;" class="d-block w-100 h-40" alt="...">
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="assets/handbags/handbagn.png" class="d-block w-100" alt="handbag">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/handbags/handbag11.png" class="d-block w-100" alt="handbag">
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 <!-- Products -->
         <div class="album py-3 bg-light">
           <div class="container">
@@ -1067,13 +1067,13 @@
    <div class="col-sm-12 col-md-6 col-lg-4 text-center my-5" >
     <form  class="border" style="border-radius: 5px;" onsubmit="return validate()" action="message.html">
       <h2 class="my-2">Place Order!</h2>
-      <input type="text" placeholder="What is your name?" class="fulname">
-      <input type="text" placeholder="Phone Number?" class="phoneNo">
+      <input type="text" placeholder="What is your name?" class="fulname" required>
+      <input type="text" placeholder="Phone Number?" class="phoneNo" required>
       <br>
            
       <div class = "my-3 ">
       <label>What do you want to buy?</label><br>
-    <select class="order">
+    <select class="order" required>
       <option disabled selected>--Select here--</option>
       <Option>School Bag</Option>
       <Option>Lunch Bag</Option>
@@ -1086,8 +1086,8 @@
         </div>
         <div class="my-3">
           <label>Measurement, if Known?</label><br>
-          <input type="number" placeholder="length">
-          <input type="number" placeholder="width">
+          <input type="number" placeholder="length" required>
+          <input type="number" placeholder="width" required>
         </div>
         <button type="submit" class="btn btn-primary my-3" >Order Now!</button>
     </form>
@@ -1130,8 +1130,8 @@
            </footer>
     </div>
 </body>
-<script src="assets/script/ask.js"></script>
-<script src="assets/script/order.js"></script>
+<!-- <script src="assets/script/ask.js"></script>
+<script src="assets/script/order.js"></script> -->
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
        
